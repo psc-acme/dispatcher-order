@@ -1,0 +1,36 @@
+{
+    "name": "psc-acme/dispatcher-order",
+    "description": "Package dispatcher-order for psc-acme organization",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Philipp Scheit",
+            "email": "p.scheit@packagist.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "PscAcme\\DispatcherOrder\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=8.1",
+        "illuminate/database": "^11.0",
+        "symfony/event-dispatcher": "^7.0"
+    },
+    "require-dev": {
+        "phpstan/phpstan-symfony": "^1.0"
+    },
+    "minimum-stability": "stable",
+    "config": {
+        "secure-http": false
+    },
+    "repositories": {
+        "private-packagist": {
+            "type": "composer",
+            "url": "http://repo.packagist.com.lo/psc-acme/"
+        },
+        "packagist.org": false
+    }
+}
